@@ -47,9 +47,9 @@ const isEnglish = (str) =>{
 }
 
 /*
-Function to convert all the characters of a string (English) to Braille simbol
+Function to convert all the characters of a string (English) to Braille symbol
 str: a string to be converted
-returns a string converted to Braille simbol
+returns a string converted to Braille symbol
 */
 const englishToBraille = (str) =>{
    let chars = [];
@@ -87,8 +87,8 @@ const englishToBraille = (str) =>{
 }
 
 /*
-Function to check if the charactor is alphabet
-ch: a charactor to be checked
+Function to check if the character is an alphabet
+ch: a character to be checked
 returns true or false
 */
 const isAlpha = (ch) =>{
@@ -97,20 +97,20 @@ const isAlpha = (ch) =>{
 }
 
 /*
-Function to check if the charactor is capitalized
-ch: a charactor to be checked
+Function to check if the character is capitalized
+ch: a character to be checked
 returns true or false
 */
-const isCapital= (ch) =>{
+const isCapital = (ch) =>{
    return (ch >= "A" && ch <= "Z")
 }
 
 /*
-Function to check if the charactor is number
-ch: a charactor to be checked
+Function to check if the character is a number
+ch: a character to be checked
 returns true or false
 */
-const isNumber= (ch) =>{
+const isNumber = (ch) =>{
    return (ch >= "0" && ch <= "9")
 }
 
@@ -120,13 +120,13 @@ object: an object to be searched from
 value: a value to search
 returns the key
 */
-const getKeyByValue=(object, value) =>{
+const getKeyByValue = (object, value) =>{
    return Object.keys(object).find(key =>
       object[key][0] == value || BRAILLE_TO_ALPHANUMERIC[key][1] == value );
 }
 
 /*
-Function to convert all the characters of a string (Braille) to English
+Function to convert a string (Braille) to English
 str: a string to be converted
 returns a string converted to English
 */
@@ -175,9 +175,9 @@ const brailleToEnglish = (str) =>{
 }
 
 /*
-Function to convert charactor (Braille) to English letter
+Function to convert a character (Braille string) to an English letter
 ch: a string to be converted (represents a charactor)
-returns a charactor converted to English letter
+returns a character converted to English letter
 */
 const convertToEnglish = (ch) =>{
    return BRAILLE_TO_ALPHANUMERIC[ch];
