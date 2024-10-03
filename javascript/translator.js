@@ -37,7 +37,7 @@ Function to check if the string is English
 str: a string to be checked
 returns true or false
 */
-const isEnglish=(str)=>{
+const isEnglish = (str) =>{
    for (let i = 0; i < str.length; i++){
       if(str[i] != '.' && str[i] != 'O'){
          return true;
@@ -91,7 +91,7 @@ Function to check if the charactor is alphabet
 ch: a charactor to be checked
 returns true or false
 */
-const isAlpha = (ch)=>{
+const isAlpha = (ch) =>{
    return typeof ch === "string" && ch.length === 1
           && (ch >= "a" && ch <= "z" || ch >= "A" && ch <= "Z");
 }
@@ -101,7 +101,7 @@ Function to check if the charactor is capitalized
 ch: a charactor to be checked
 returns true or false
 */
-const isCapital= (ch)=>{
+const isCapital= (ch) =>{
    return (ch >= "A" && ch <= "Z")
 }
 
@@ -110,7 +110,7 @@ Function to check if the charactor is number
 ch: a charactor to be checked
 returns true or false
 */
-const isNumber= (ch)=>{
+const isNumber= (ch) =>{
    return (ch >= "0" && ch <= "9")
 }
 
