@@ -203,7 +203,6 @@ if (!INPUT) process.exit(1);
 try{
    console.log(translate(INPUT));
 } catch (error){
-   console.log("failed")
    console.log(error.message);
    process.exit(1);
 }
